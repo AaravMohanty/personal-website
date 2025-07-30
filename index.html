@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="styles.css" />
   <!-- Google Fonts for modern typography -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p8fULzZ0e9E7ZldoVkfSjNeZviUMu3gf3N4uJz0zWk1S9pqX4gd4m0qB0LP9Nv0z5BbSI1qmcX1YkbhO+M0huQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header class="navbar">
@@ -21,19 +23,21 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <!-- Theme toggle button for dark/light mode -->
+      <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
       <div class="nav-toggle" id="nav-toggle">☰</div>
     </div>
   </header>
 
   <section class="hero" id="hero">
-    <div class="container hero-content">
+    <div class="container hero-content reveal">
       <h1>Hi, I'm Aarav</h1>
       <p class="tagline">Aspiring Machine Learning Engineer &amp; Software Developer</p>
       <a href="#contact" class="button">Get in Touch</a>
     </div>
   </section>
 
-  <section id="about" class="section about">
+  <section id="about" class="section about reveal">
     <div class="container">
       <h2>About Me</h2>
       <p>
@@ -52,7 +56,7 @@
     </div>
   </section>
 
-  <section id="experience" class="section experience">
+  <section id="experience" class="section experience reveal">
     <div class="container">
       <h2>Experience</h2>
       <div class="timeline">
@@ -92,19 +96,22 @@
     </div>
   </section>
 
-  <section id="projects" class="section projects">
+  <section id="projects" class="section projects reveal">
     <div class="container">
       <h2>Projects &amp; Involvement</h2>
       <div class="projects-grid">
         <div class="project">
+          <img src="project-quant.png" alt="Abstract stock market graphic" class="project-img">
           <h3>Boiler Quant</h3>
           <p>Designed and automated quantitative trading strategies in Python using Bollinger Bands, RSI and factorial moving averages; achieved an 85% win rate and 2.5% average return per trade.</p>
         </div>
         <div class="project">
+          <img src="project-consulting.png" alt="Abstract data network graphic" class="project-img">
           <h3>PurdueTHINK Consulting</h3>
           <p>Developed a database and full‑stack web application (Next.js) to support Purdue’s Data Mine outreach, cleaning 6.5k records and scraping 1.5k LinkedIn profiles to engage alumni.</p>
         </div>
         <div class="project">
+          <img src="project-aristalkle.png" alt="Abstract AI voice technology graphic" class="project-img">
           <h3>ArisTalkle</h3>
           <p>BoilerMake hackathon‑winning project featuring an AI‑powered web app that generates response videos and provides personalized speech feedback using Next.js, Flask and MongoDB.</p>
         </div>
@@ -112,7 +119,7 @@
     </div>
   </section>
 
-  <section id="skills" class="section skills">
+  <section id="skills" class="section skills reveal">
     <div class="container">
       <h2>Technical Skills</h2>
       <ul class="skill-list">
@@ -123,15 +130,15 @@
     </div>
   </section>
 
-  <section id="contact" class="section contact">
+  <section id="contact" class="section contact reveal">
     <div class="container">
       <h2>Contact Me</h2>
       <p>Feel free to reach out for collaboration, project ideas or just to chat!</p>
       <ul class="contact-info">
-        <li>Phone: <a href="tel:+15712786402">(571) 278‑6402</a></li>
-        <li>Email: <a href="mailto:aarav.mohanty23@gmail.com">aarav.mohanty23@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/aaravmohanty" target="_blank">linkedin.com/in/aaravmohanty</a></li>
-        <li>GitHub: <a href="https://github.com/AaravMohanty" target="_blank">github.com/AaravMohanty</a></li>
+        <li><i class="fas fa-phone"></i> <a href="tel:+15712786402">(571) 278‑6402</a></li>
+        <li><i class="fas fa-envelope"></i> <a href="mailto:aarav.mohanty23@gmail.com">aarav.mohanty23@gmail.com</a></li>
+        <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/aaravmohanty" target="_blank">linkedin.com/in/aaravmohanty</a></li>
+        <li><i class="fab fa-github"></i> <a href="https://github.com/AaravMohanty" target="_blank">github.com/AaravMohanty</a></li>
       </ul>
     </div>
   </section>
