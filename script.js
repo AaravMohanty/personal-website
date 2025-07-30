@@ -7,31 +7,15 @@ navToggle.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-// Theme toggle for dark/light mode
-const themeToggle = document.getElementById('theme-toggle');
-const body = document.body;
-
-function applyTheme(theme) {
-  if (theme === 'dark') {
-    body.classList.add('dark-mode');
-    themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-  } else {
-    body.classList.remove('dark-mode');
-    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-  }
-}
-
-// Load theme preference from localStorage
+// On DOM load, initialise dynamic behaviours
 document.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem('theme');
-  applyTheme(savedTheme);
   // Set current year in footer
   const yearSpan = document.getElementById('year');
   const currentYear = new Date().getFullYear();
   if (yearSpan) {
     yearSpan.textContent = currentYear;
   }
-  // Initialize typewriter effect for tagline
+  // Typewriter effect for tagline
   const taglineEl = document.querySelector('.hero .tagline');
   if (taglineEl) {
     const fullText = taglineEl.textContent.trim();
@@ -46,14 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     type();
   }
-});
-
-// Toggle theme on button click
-themeToggle.addEventListener('click', () => {
-  const isDark = body.classList.toggle('dark-mode');
-  const newTheme = isDark ? 'dark' : 'light';
-  localStorage.setItem('theme', newTheme);
-  applyTheme(newTheme);
 });
 
 // Intersection Observer for reveal animations

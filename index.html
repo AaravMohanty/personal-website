@@ -23,8 +23,6 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <!-- Theme toggle button for dark/light mode -->
-      <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
       <div class="nav-toggle" id="nav-toggle">☰</div>
     </div>
   </header>
@@ -40,19 +38,27 @@
   <section id="about" class="section about reveal">
     <div class="container">
       <h2>About Me</h2>
-      <p>
-        I am an undergraduate computer science student at Purdue University pursuing a
-        Bachelor of Science with a minor in Mathematics (expected May&nbsp;2027).
-        My academic interests include artificial intelligence, machine learning, and
-        data engineering. Outside the classroom I explore modern development frameworks and design intuitive user experiences.
-      </p>
-      <p>
-        I'm currently based in Reston, Virginia and working as an AI/ML intern at
-        Empower AI, where I research unsupervised learning algorithms to uncover fraud,
-        waste and abuse patterns in healthcare claims. Previously I've interned in
-        software engineering and analytics roles, contributing to NLP pipelines,
-        reinforcement learning projects, and data‑driven products.
-      </p>
+      <div class="about-content">
+        <!-- Profile image placed alongside introduction -->
+        <div class="profile-image">
+          <img src="profile.png" alt="Photo of Aarav Mohanty" class="profile-img" />
+        </div>
+        <div class="about-text">
+          <p>
+            I am an undergraduate computer science student at Purdue University pursuing a
+            Bachelor of Science with a minor in Mathematics (expected May&nbsp;2027).
+            My academic interests include artificial intelligence, machine learning, and
+            data engineering. Outside the classroom I explore modern development frameworks and design intuitive user experiences.
+          </p>
+          <p>
+            I'm currently based in Reston, Virginia and working as an AI/ML intern at
+            Empower AI, where I research unsupervised learning algorithms to uncover fraud,
+            waste and abuse patterns in healthcare claims. Previously I've interned in
+            software engineering and analytics roles, contributing to NLP pipelines,
+            reinforcement learning projects, and data‑driven products.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -60,36 +66,60 @@
     <div class="container">
       <h2>Experience</h2>
       <div class="timeline">
+        <!-- Empower AI Experience -->
         <div class="timeline-item">
-          <h3>Empower AI – AI/ML Intern</h3>
-          <span class="date">Jul&nbsp;2025 – Present | Reston, VA</span>
+          <div class="item-header">
+            <img src="logos/empower-ai.png" alt="Empower AI logo" class="company-logo" />
+            <div>
+              <h3>Empower AI – AI/ML Intern</h3>
+              <span class="date">Jul 2025 – Present · Reston, VA</span>
+            </div>
+          </div>
           <ul>
-            <li>Researched and implemented unsupervised algorithms (Isolation Forest, LOF, SVMs) to detect fraud in Medicare/Medicaid claims, improving anomaly‑detection precision.</li>
+            <li>Researched and implemented unsupervised algorithms (Isolation Forest, LOF, SVMs) to detect fraud in Medicare/Medicaid claims, improving anomaly‑detection precision.</li>
             <li>Built scalable data pipelines in Pandas and Scikit‑Learn to ingest, clean and aggregate health records.</li>
           </ul>
         </div>
+        <!-- Ackuity AI Experience -->
         <div class="timeline-item">
-          <h3>Ackuity.AI – Software Engineering Intern</h3>
-          <span class="date">May&nbsp;2025 – Jul&nbsp;2025 | Fairfax, VA</span>
+          <div class="item-header">
+            <img src="logos/ackuity-ai.png" alt="Ackuity AI logo" class="company-logo" />
+            <div>
+              <h3>Ackuity AI – Software Engineering Intern</h3>
+              <span class="date">May 2025 – Jul 2025 · Fairfax, VA</span>
+            </div>
+          </div>
           <ul>
             <li>Developed an NLP pipeline for PII detection using LLAMA 3.1 via Ollama, HuggingFace Transformers and Microsoft Presidio for entity recognition and redaction.</li>
             <li>Engineered custom retrieval‑augmented generation (RAG) pipelines with vector databases and cosine‑similarity search.</li>
           </ul>
         </div>
+        <!-- Kihara Lab Experience (use Purdue logo) -->
         <div class="timeline-item">
-          <h3>Kihara Bioinformatics Laboratory – Machine Learning Research Intern</h3>
-          <span class="date">Jan&nbsp;2025 – Present | West Lafayette, IN</span>
+          <div class="item-header">
+            <img src="logos/purdue.png" alt="Purdue University logo" class="company-logo" />
+            <div>
+              <h3>Kihara Bioinformatics Laboratory – Research Intern</h3>
+              <span class="date">Jan 2025 – Present · West Lafayette, IN</span>
+            </div>
+          </div>
           <ul>
             <li>Streamlined protein model refinement via Python preprocessing pipelines to aid structural prediction.</li>
             <li>Designed a PPO‑based reinforcement learning pipeline to optimize AlphaFold 2 predictions, improving beta‑amyloid structural accuracy by 5%.</li>
           </ul>
         </div>
+        <!-- CTB Inc Experience -->
         <div class="timeline-item">
-          <h3>CTB Inc. – Product Analytics/Data Science Intern</h3>
-          <span class="date">Aug&nbsp;2024 – May&nbsp;2025 | West Lafayette, IN</span>
+          <div class="item-header">
+            <img src="logos/ctb.png" alt="CTB Inc. logo" class="company-logo" />
+            <div>
+              <h3>CTB Inc. – Data Science Intern</h3>
+              <span class="date">Aug 2024 – May 2025 · West Lafayette, IN</span>
+            </div>
+          </div>
           <ul>
             <li>Developed supervised models (Decision Trees) to predict equipment failures, reducing downtime and improving accuracy by 30%.</li>
-            <li>Cleaned and validated 10k+ equipment records, eliminating 800+ faulty entries.</li>
+            <li>Cleaned and validated 10k+ equipment records, eliminating more than 800 faulty entries.</li>
           </ul>
         </div>
       </div>
@@ -100,18 +130,21 @@
     <div class="container">
       <h2>Projects &amp; Involvement</h2>
       <div class="projects-grid">
+        <!-- Boiler Quant project card with icon -->
         <div class="project">
-          <img src="project-quant.png" alt="Abstract stock market graphic" class="project-img">
+          <div class="project-icon">BQ</div>
           <h3>Boiler Quant</h3>
           <p>Designed and automated quantitative trading strategies in Python using Bollinger Bands, RSI and factorial moving averages; achieved an 85% win rate and 2.5% average return per trade.</p>
         </div>
+        <!-- PurdueTHINK Consulting card with database/network icon -->
         <div class="project">
-          <img src="project-consulting.png" alt="Abstract data network graphic" class="project-img">
+          <div class="project-icon">PT</div>
           <h3>PurdueTHINK Consulting</h3>
           <p>Developed a database and full‑stack web application (Next.js) to support Purdue’s Data Mine outreach, cleaning 6.5k records and scraping 1.5k LinkedIn profiles to engage alumni.</p>
         </div>
+        <!-- ArisTalkle card with microphone icon -->
         <div class="project">
-          <img src="project-aristalkle.png" alt="Abstract AI voice technology graphic" class="project-img">
+          <div class="project-icon">AT</div>
           <h3>ArisTalkle</h3>
           <p>BoilerMake hackathon‑winning project featuring an AI‑powered web app that generates response videos and provides personalized speech feedback using Next.js, Flask and MongoDB.</p>
         </div>
@@ -122,11 +155,23 @@
   <section id="skills" class="section skills reveal">
     <div class="container">
       <h2>Technical Skills</h2>
-      <ul class="skill-list">
-        <li><strong>Languages:</strong> Java, Python, C, JavaScript, R</li>
-        <li><strong>Tools:</strong> Git, VS Code, IntelliJ, Pandas, NumPy, Matplotlib, Scikit‑Learn, Keras</li>
-        <li><strong>Frameworks/Libraries:</strong> React, Next.js, Flask, JUnit</li>
-      </ul>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">L</div>
+          <h3>Languages</h3>
+          <p>Java, Python, C, JavaScript, R</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">T</div>
+          <h3>Tools</h3>
+          <p>Git, VS&nbsp;Code, IntelliJ, Pandas, NumPy, Matplotlib, Scikit‑Learn, Keras</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">F</div>
+          <h3>Frameworks</h3>
+          <p>React, Next.js, Flask, JUnit</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -135,10 +180,10 @@
       <h2>Contact Me</h2>
       <p>Feel free to reach out for collaboration, project ideas or just to chat!</p>
       <ul class="contact-info">
-        <li><i class="fas fa-phone"></i> <a href="tel:+15712786402">(571) 278‑6402</a></li>
-        <li><i class="fas fa-envelope"></i> <a href="mailto:aarav.mohanty23@gmail.com">aarav.mohanty23@gmail.com</a></li>
-        <li><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/aaravmohanty" target="_blank">linkedin.com/in/aaravmohanty</a></li>
-        <li><i class="fab fa-github"></i> <a href="https://github.com/AaravMohanty" target="_blank">github.com/AaravMohanty</a></li>
+        <li>📞 <a href="tel:+15712786402">(571) 278‑6402</a></li>
+        <li>✉️ <a href="mailto:aarav.mohanty23@gmail.com">aarav.mohanty23@gmail.com</a></li>
+        <li>🔗 <a href="https://linkedin.com/in/aaravmohanty" target="_blank">linkedin.com/in/aaravmohanty</a></li>
+        <li>💻 <a href="https://github.com/AaravMohanty" target="_blank">github.com/AaravMohanty</a></li>
       </ul>
     </div>
   </section>
